@@ -12,24 +12,77 @@ and open the template in the editor.
         <meta name="author" content="Francesco Aracu">
         <meta name="keywords" content="HTML, CSS, FPW, Progetto, Java">
         <meta name="description" content="Pagina di registrazione delle esercitazioni di FPW">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     </head>
     <body>
-        <div>
-            <h1>It is not a day to forget... <a href="index.html">Go back</a></h1>
-        </div>
-        <div>
+        <header>
+            <h1>It is not a day to forget...</h1>
+            <div id="logo">
+                <img title="Nico Bortis" alt="Foto di Nico Bortis" src="img/Nico.jpg">  
+            </div>
+        </header>
+        
+        <nav>
+            <h2>Page list</h2>
+            <ul>
+                <li><a href="index.html">Go back</a></li>
+                <li><a href="https://google.com">Lost?</a></li>
+                <li><a href="articoli.html">Articles</a></li>
+                <li><a href="registrazione.html">Sign up</a></li>
+            </ul>
+        </nav>
+        
+        <main>
             <form action="index.html" method="post">
+                
                 <label for="nomeutente">Nome: </label>
                 <input type="text" name="nomeUtente" id="nomeutente" value="Mario Rossi"/>
                 <br/>
+                
                 <label for="id_username">Username: </label>
                 <input type="text" name="username" id="id_username" value="username"/>
                 <br/>
+                
                 <label for="id_password">Password: </label>
                 <input type="password" name="password" id="id_password" value="password"/>
                 <br/>
+                
+                <label for="scrittore">Writer:</label>
+                <input type="radio" name="tipo_utente" id="scrittore" value="uomo">
+                <br/>
+                
+                <label for="autore">Author:</label>
+                <input type="radio" name="tipo_utente" id="autore" value="autore">
+                <br/>
+                
+                <p class="importante">Colore preferito
+                <select size="5" multiple>
+                    <option value="red">Rosso</option>
+                    <option value="blue">Blu</option>
+                    <option value="white">Bianco</option>
+                    <option value="green">Verde</option>
+                    <option value="yellow">Giallo</option>
+                </select>
+                <br/>
+                </p>
+                
                 <input type="submit" value="Submit"/>
             </form>
+        </main>
+        
+        <div id="content">
+            <div>
+                <h2>Prova_interna</h2>
+            </div>
+            <h2>Prova1</h2>
+            <h2>Prova2</h2>
+            <h2>Prova3</h2>
+            <h2>Prova4</h2>
+            <h2>Prova5</h2>
         </div>
+        
+        <footer>
+            <p>Developed by Francesco Aracu</p>
+        </footer>
     </body>
 </html>

@@ -13,13 +13,12 @@
     <body>
         <header>
             <div id="logodiv">
-                <img class="logoimg" title="Nico Bortis" alt="Foto di Nico Bortis" src="img/Nico.jpg">  
+                <img class="logoimg" title="Nico Bortis" alt="Foto di Nico Bortis" src="img/Nico.jpg">
                 <h1 id="logotitle">It is not a day to forget...</h1>
             </div>
         </header>
-        
+
         <nav>
-            <h2>Page list</h2>
             <ul>
                 <li><a href="index.html">Go back</a></li>
                 <li><a href="https://google.com">Lost?</a></li>
@@ -27,7 +26,8 @@
                 <li><a href="registrazione.html">Sign up</a></li>
             </ul>
         </nav>
-        
+
+      <div id=main_content>
         <aside>
             <div>
                 <ol>
@@ -38,30 +38,30 @@
                 </ol>
             </div>
         </aside>
-        
+
         <main>
             <form action="index.html" method="post">
-                
+
                 <label for="nomeutente">Nome: </label>
                 <input type="text" name="nomeUtente" id="nomeutente" value="Mario Rossi"/>
                 <br/>
-                
+
                 <label for="id_username">Username: </label>
                 <input type="text" name="username" id="id_username" value="username"/>
                 <br/>
-                
+
                 <label for="id_password">Password: </label>
                 <input type="password" name="password" id="id_password" value="password"/>
                 <br/>
-                
+
                 <label for="scrittore">Writer:</label>
                 <input type="radio" name="tipo_utente" id="scrittore" value="uomo">
                 <br/>
-                
+
                 <label for="autore">Author:</label>
                 <input type="radio" name="tipo_utente" id="autore" value="autore">
                 <br/>
-                
+
                 <p class="importante">Colore preferito
                 <select size="5" multiple>
                     <option value="red">Rosso</option>
@@ -72,11 +72,12 @@
                 </select>
                 <br/>
                 </p>
-                
+
                 <input type="submit" value="Submit"/>
             </form>
         </main>
-        
+      </div>
+
         <footer>
             <p>Developed by Francesco Aracu</p>
         </footer>
